@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>VELOCITY ARENA | Acesso Restrito</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <!-- ========================================
+         PÁGINA DE AUTENTICAÇÃO
+    ========================================= -->
+    <main class="auth-page">
+        <div class="auth-box">
+            <!-- Header -->
+            <header class="auth-header">
+                <h1 class="auth-logo">
+                    <span class="gradient">VELOCITY</span> ARENA
+                </h1>
+                <p class="auth-subtitle">Apresentação Executiva</p>
+                
+                <div class="auth-divider"></div>
+                
+                <h2 class="auth-title">Acesso Restrito</h2>
+                <p class="auth-description">
+                    Este conteúdo é exclusivo para investidores e parceiros. 
+                    Digite a senha fornecida para acessar.
+                </p>
+            </header>
+
+            <!-- Formulário -->
+            <form id="authForm" class="auth-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="passwordInput" class="form-label">Senha de Acesso</label>
+                    <input 
+                        type="password" 
+                        id="passwordInput" 
+                        class="form-input" 
+                        placeholder="• • • • • • • •"
+                        autocomplete="off"
+                        spellcheck="false"
+                        required
+                    >
+                </div>
+
+                <button type="submit" id="authButton" class="auth-btn">
+                    Acessar Apresentação
+                </button>
+
+                <div id="authMessage" class="auth-message"></div>
+            </form>
+
+            <!-- Footer -->
+            <footer class="auth-footer">
+                <p class="auth-footer-text">
+                    Documento Confidencial • 2025
+                </p>
+            </footer>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>
